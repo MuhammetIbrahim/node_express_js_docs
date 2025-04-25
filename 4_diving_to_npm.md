@@ -38,10 +38,17 @@ npm install date-fns
 ```
 
 ### 💡 Importing a package:
+
+#### ✅ ES Modules (with "type": "module")
 ```js
-// ES Modules:
 import { format } from "date-fns";
 import { v4 as uuid } from "uuid";
+```
+
+#### ✅ CommonJS (default in older Node.js projects)
+```js
+const { format } = require("date-fns");
+const { v4: uuid } = require("uuid");
 ```
 
 ### ✅ To install all listed dependencies from package.json:
@@ -77,6 +84,21 @@ Goes into:
 }
 ```
 
+### ✅ Add scripts for development
+In your `package.json`:
+```json
+"scripts": {
+  "start": "node index.js",
+  "dev": "nodemon index.js"
+}
+```
+
+Then run:
+```bash
+npm start    # uses node
+npm run dev  # uses nodemon for live reload during development
+```
+
 ---
 
 ## 📁 Understanding `node_modules`
@@ -93,19 +115,35 @@ Goes into:
 ### 🚀 Useful Commands:
 ```bash
 npm start       # Runs "start" script defined in package.json
-npm run dev     # Runs custom "dev" script
+npm run dev     # Runs custom "dev" script (e.g. with nodemon)
 npm update      # Updates all packages
 ```
 
 ### 📅 Example: Format date with `date-fns`
+
+#### ES Modules:
 ```js
 import { format } from "date-fns";
 console.log(format(new Date(), "yyyy-MM-dd\tHH:mm:ss"));
 ```
 
+#### CommonJS:
+```js
+const { format } = require("date-fns");
+console.log(format(new Date(), "yyyy-MM-dd\tHH:mm:ss"));
+```
+
 ### 🔗 Generate unique ID with `uuid`
+
+#### ES Modules:
 ```js
 import { v4 as uuid } from "uuid";
+console.log(uuid());
+```
+
+#### CommonJS:
+```js
+const { v4: uuid } = require("uuid");
 console.log(uuid());
 ```
 

@@ -21,9 +21,6 @@ console.log("Country:", country);
 2. ❓ Conditional Statements
 Use conditionals to make decisions in your code.
 
-js
-Copy
-Edit
 let score = 75;
 
 if (score >= 90) {
@@ -38,9 +35,7 @@ if (score >= 90) {
 Ternary Operator
 A shorter way to write simple conditionals:
 
-js
-Copy
-Edit
+
 let isLoggedIn = true;
 let message = isLoggedIn ? "Welcome back!" : "Please log in.";
 console.log(message);
@@ -49,17 +44,11 @@ Loops are used to repeat actions.
 
 for Loop
 
-js
-Copy
-Edit
 for (let i = 1; i <= 5; i++) {
   console.log("Number:", i);
 }
 while Loop
 
-js
-Copy
-Edit
 let count = 0;
 while (count < 3) {
   console.log("Count:", count);
@@ -67,9 +56,6 @@ while (count < 3) {
 }
 for...of Loop (for arrays)
 
-js
-Copy
-Edit
 const fruits = ["🍎", "🍌", "🍓"];
 
 for (const fruit of fruits) {
@@ -80,9 +66,6 @@ Functions let you group code and reuse it.
 
 Function Declaration
 
-js
-Copy
-Edit
 function greet(name) {
   return `Hello, ${name}!`;
 }
@@ -90,9 +73,6 @@ function greet(name) {
 console.log(greet("Muhammet"));
 Arrow Function (ES6+)
 
-js
-Copy
-Edit
 const add = (a, b) => a + b;
 console.log(add(5, 3)); // 8
 5. 🧪 Running the Code
@@ -102,8 +82,5 @@ Open terminal in that folder
 
 Run:
 
-bash
-Copy
-Edit
 node index.js
 ✅ Your JavaScript will run using Node.js!

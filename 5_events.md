@@ -12,13 +12,13 @@ Node.js is built on an **event-driven architecture**, which allows asynchronous 
 
 ---
 
-## ⚙️ EventEmitter Class
+## ⚙️ EventEmitter Class (with ES6 Modules)
 
 To create and handle custom events, Node.js provides the **`EventEmitter`** class from the `events` module.
 
 ```js
-// CommonJS style (default for most Node.js apps)
-const EventEmitter = require('events');
+// ES6 style (requires "type": "module" in package.json)
+import EventEmitter from 'events';
 
 // Create an instance
 const myEmitter = new EventEmitter();
@@ -64,6 +64,8 @@ Some real-world use cases where EventEmitter is useful:
 ## ⚠️ Tip
 - Always remove listeners if they are no longer needed to prevent **memory leaks**:
 ```js
+const handlerFn = () => console.log('Doing something...');
+myEmitter.on('eventName', handlerFn);
 myEmitter.removeListener('eventName', handlerFn);
 ```
 - Or listen only once:

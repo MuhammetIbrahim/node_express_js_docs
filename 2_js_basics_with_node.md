@@ -1,12 +1,14 @@
-🚀 JavaScript Basics with Node.js
+# 🚀 JavaScript Basics with Node.js
+
 Learn the foundations of JavaScript programming using the Node.js runtime — including variables, conditionals, loops, and functions — all from the server side!
 
-1. ✍️ Variables
-In JavaScript (and Node.js), you declare variables using let, const, and var.
+---
 
-js
-Copy
-Edit
+## 1. ✍️ Variables
+
+In JavaScript (and Node.js), you declare variables using `let`, `const`, and `var`.
+
+```js
 let name = "Ibrahim";
 const age = 22;
 var country = "Türkiye";
@@ -46,6 +48,7 @@ console.log(message);
 Loops are used to repeat actions.
 
 for Loop
+
 js
 Copy
 Edit
@@ -53,6 +56,7 @@ for (let i = 1; i <= 5; i++) {
   console.log("Number:", i);
 }
 while Loop
+
 js
 Copy
 Edit
@@ -62,6 +66,7 @@ while (count < 3) {
   count++;
 }
 for...of Loop (for arrays)
+
 js
 Copy
 Edit
@@ -74,6 +79,7 @@ for (const fruit of fruits) {
 Functions let you group code and reuse it.
 
 Function Declaration
+
 js
 Copy
 Edit
@@ -83,6 +89,7 @@ function greet(name) {
 
 console.log(greet("Muhammet"));
 Arrow Function (ES6+)
+
 js
 Copy
 Edit
@@ -99,4 +106,4 @@ bash
 Copy
 Edit
 node index.js
-Your JavaScript will run using Node.js!
+✅ Your JavaScript will run using Node.js!

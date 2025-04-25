@@ -53,20 +53,22 @@ console.log(message);
 Loops are used to repeat actions.
 ---------------------------------------------------
 
-#for Loop
+for Loop
+
+---------------------
 
 for (let i = 1; i <= 5; i++) {
   console.log("Number:", i);
 }
-#while Loop
-
+while Loop
+------------------------------------------------
 let count = 0;
 while (count < 3) {
   console.log("Count:", count);
   count++;
 }
-#for...of Loop (for arrays)
-
+for...of Loop (for arrays)
+-------------------------------------------------------
 const fruits = ["🍎", "🍌", "🍓"];
 
 for (const fruit of fruits) {

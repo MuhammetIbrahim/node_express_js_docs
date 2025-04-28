@@ -63,5 +63,3 @@ app.listen(PORT, () => {
 ---
 
 ✅ That’s it! You’ve just created a basic Express.js server.
-
-Would you also like me to extend this by adding **middleware** or a **404 handler**?

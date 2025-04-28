@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "name": "node_express_js_doc",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Welcome to the Node.js & Express.js internal guide! This documentation is designed to help new developers quickly onboard into our backend development environment. Here, we’ll walk you through the fundamentals of Node.js, how to work with files, install and use packages with npm, understand async behavior, and develop server-side applications using Express.js. All examples are written using modern **ES6+** syntax and practices.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

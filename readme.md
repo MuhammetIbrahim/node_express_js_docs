@@ -87,16 +87,6 @@ Express is a minimal and fast Node.js web framework. We’ll cover:
 - Securing routes
 - Verifying JWTs in middleware
 
-## 11. 🛢️ Using Databases with Sequelize
-- Setting up Sequelize
-- Models, Migrations
-- Querying the database
-
-## 12. 🔄 Refresh Tokens with JWT
-- Creating & managing refresh tokens
-- Storing tokens securely
-- Token renewal strategy
-
 ---
 
 This will be your go-to reference while developing with Node.js & Express. Examples and code snippets will be included in each section. Happy hacking! 💻✨
